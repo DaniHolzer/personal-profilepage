@@ -1,5 +1,6 @@
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
+import { Button } from "~/src/components/buttons/root/Button";
 
 export function Welcome() {
   return (
@@ -19,6 +20,9 @@ export function Welcome() {
             />
           </div>
         </header>
+        <div className="w-75 h-50 border border-gray-200 rounded-3xl">
+           <Button className="bg-yellow-500">Hello</Button> 
+        </div>
         <div className="max-w-[300px] w-full space-y-6 px-4">
           <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
             <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
