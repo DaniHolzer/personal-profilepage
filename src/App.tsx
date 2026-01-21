@@ -12,7 +12,7 @@ function App() {
         <p className="bg-stone-700 p-5 mb-20">
           This profile page is currently under construction. In the meantime, 
           feel free to explore
-          <a href="https://daniholzer.github.io/my-blog"> my Blog </a> 
+          <a href="https://daniholzer.github.io/my-blog" target="_blank"> my Blog </a> 
           or connect with me on social media.
         </p>
         <h1 className="mb-10">About Me</h1>
