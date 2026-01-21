@@ -6,7 +6,7 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 export default defineConfig({
   plugins: [
     react(),
-    tailwindcss(),  // ← Must come before react()
+    tailwindcss(),
     tsconfigPaths()
   ],
 })
