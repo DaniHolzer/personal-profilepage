@@ -1,33 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import profileImage from './assets/Profilfoto500x500px.jpg'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href="#" className="" >
+          <img src={profileImage} className="logo" alt="Profile foto"/>
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <section>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          This profile page is currently under construction. In the meantime, 
+          feel free to explore my blog or connect with me on social media.
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <h1 className="">
+          About Me
+        </h1>
+        <h2>
+          Hi, I’m Daniel
+        </h2>
+        <p className="bold">
+        a self-taught software engineering student from South Tyrol.
+        </p>
+        <p>
+        I started learning software development from home two years ago, 
+        following a structured but independent path. My main learning resources 
+        have been Udemy courses and CompTIA certifications, 
+        which helped me build a strong technical foundation.
+        </p>
+        <p>
+        So far, I’ve worked with HTML, CSS, JavaScript, TypeScript, React, 
+        and Tailwind CSS. I enjoy turning ideas into clean, functional interfaces 
+        and continuously improving my skills one step at a time.
+        </p>
+      </section>
     </>
   )
 }
