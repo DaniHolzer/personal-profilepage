@@ -21,7 +21,7 @@ function App() {
         <h2>
           Hi, I’m Daniel
         </h2>
-        <p className="bold">
+        <p className="">
         a self-taught software engineering student from South Tyrol.
         </p>
         <p>
