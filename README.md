@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+# Personal Profile Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**This profile page is currently under construction.** 
 
-Currently, two official plugins are available:
+🌐 **Live site**: https://dholzer.it
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In the meantime, feel free to explore my [Blog](https://daniholzer.github.io/my-blog/) or connect with me on social media.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: React (with TypeScript)
+- **Build tool**: Vite
+- **Styling**: Tailwind CSS
+- **Component styling helpers**:
+  - `tailwind-merge`
+  - `tailwind-variants`
+- **Hosting**: Netlify
+- **Version control**: Git & GitHub
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Node.js (LTS recommended)
+- npm or pnpm or yarn
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Clone the repository
+git clone https://github.com/DaniHolzer/personal-profilepage.git
+cd personal-profilepage
+
+# Install dependencies
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+Open your browser at http://localhost:5173 (or the URL shown in the terminal).
+
+### Production Build
+
+```bash
+npm run build
+npm run preview
+```
+This creates an optimized static build in the dist/ directory.
+
+### Project Structure
+
+```text
+app/
+  src/
+    layouts/   # Page layouts / shells
+    pages/     # Route-level pages / views
+    components/ # Reusable UI components
+```
+
+### Deployment
+
+The site is deployed as a static build:
+1. Netlify runs npm run build.
+2. The dist/ folder is served via Netlify's CDN.
+3. The custom domain https://dholzer.it points to the Netlify site.
+
+Any push to the main branch triggers an automatic redeploy.
