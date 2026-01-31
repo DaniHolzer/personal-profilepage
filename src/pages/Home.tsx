@@ -1,6 +1,9 @@
 import { Heading } from "../layouts/Heading.tsx";
 
-export function Home() {
+//-------------------------------------------------------------------------------------------------
+// Home Page Component
+
+export default function Home() {
   return (
     <Heading />
   );
