@@ -1,11 +1,14 @@
+import { headingStyles } from './Heading.styles';
+
 //-------------------------------------------------------------------------------------------------
 // Heading Component
 
 export function Heading() {
+  const { base, logo} = headingStyles();
   return (
-    <section className="flex justify-between items-center p-2.5 w-full h-auto">
-      <p className="h-9">Daniel Holzer</p>
-      <button>nav</button>
+    <section aria-description="Heading" className={base()}>
+      <a href="/" className={logo()}>Daniel Holzer</a>
+      <button className="">nav</button>
     </section>
   );
 }
