@@ -1,15 +1,13 @@
 import { tv } from 'tailwind-variants';
 
 export const buttonVariants = tv({
-  base: ['inline-flex items-center justify-center font-medium transition-colors',
-      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2',
-      'disabled:pointer-events-none disabled:opacity-50 h-12',
+  base: ['inline-flex items-center justify-center pointer-events-auto',
   ],
   variants: {
     variant: {
-      primary: "bg-blue-600 text-white hover:bg-blue-700 focus-visible:ring-blue-500",
-      secondary: "bg-gray-200 text-gray-900 hover:bg-gray-300 focus-visible:ring-gray-500",
-      tertiary: "bg-transparent hover:scale-50 focus-visible: outline-none",
+      primary: "bg-blue-600 text-white hover:bg-blue-700",
+      secondary: "bg-gray-200 text-gray-900 hover:bg-gray-300",
+      tertiary: "bg-transparent",
     },
     size: {
       sm: "h-8 px-3 text-sm rounded-md",

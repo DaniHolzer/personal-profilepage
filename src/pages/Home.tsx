@@ -6,7 +6,7 @@ import { Heading } from '../layouts/heading/Heading.tsx';
 export default function Home() {
   return (
     <>
-      <Heading />;
+      <Heading />
     </>
   );
 }
