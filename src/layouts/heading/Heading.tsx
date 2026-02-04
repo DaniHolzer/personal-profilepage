@@ -1,7 +1,5 @@
 import { headingStyles } from './Heading.styles';
-import { Button } from '../../components/button/root/Button';
-import { IconButton } from '../../components/button/variants/iconButton/IconButton';
-import { AnimatedHamburgerButton } from "../../components/button/variants/animatedMenuButton/AnimatedMenuButton";
+import { HamburgerButton2Lines } from "../../components/button/variants/hamburgerButton2Lines/HamburgerButton2Lines";
 
 //-------------------------------------------------------------------------------------------------
 // Heading Component
@@ -11,7 +9,7 @@ export function Heading() {
   return (
     <section aria-description="Heading" className={base()}>
       <a href="/" className={logo()}>Daniel Holzer</a>
-      <AnimatedHamburgerButton />
+      <HamburgerButton2Lines />
     </section>
   )
 }

@@ -8,7 +8,7 @@ import { buttonVariants } from './Button.styles';
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>,
 VariantProps<typeof buttonVariants> {
     className?: string,
-    variant?: "primary" | "secondary" | "tertiary",
+    variant?: "primary" | "secondary" | "transparent",
     size?: "sm" | "md",
     children?: React.ReactNode,
 }
