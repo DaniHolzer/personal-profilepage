@@ -3,8 +3,8 @@ import { type VariantProps } from 'tailwind-variants';
 import { buttonVariants } from './Button.styles';
 
 
-//-------------------------------------------------------------------------------------------------
-// Button Properties
+//-----------------------------------------------------------------------------
+// Button - Properties
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>,
 VariantProps<typeof buttonVariants> {
     className?: string,
@@ -14,8 +14,8 @@ VariantProps<typeof buttonVariants> {
 }
 
 
-//-------------------------------------------------------------------------------------------------
-// Button Component
+//-----------------------------------------------------------------------------
+// Button - Component
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     ({className, variant, size, children, ...props}, ref) => {
