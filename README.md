@@ -1,6 +1,28 @@
 # Personal Profile Page
 
-**This profile page is currently under construction.** 
+---
+
+# new:
+
+New package manager: Bun
+
+Install dependencies with:
+```
+bun install
+```
+
+Start development server with:
+```
+bun dev
+```
+
+
+
+
+---
+
+
+**This profile page is currently under construction.**
 
 🌐 **Live site**: https://dholzer.it
 
