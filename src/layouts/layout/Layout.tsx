@@ -11,9 +11,5 @@ export interface LayoutProps {
 // Layout - Component
 
 export function Layout({ children }: LayoutProps) {
-  return (
-    <section className={layoutStyles()}>
-      {children}
-    </section>
-    );
+  return <section className={layoutStyles()}>{children}</section>;
 }

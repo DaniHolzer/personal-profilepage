@@ -1,21 +1,18 @@
-import { forwardRef, type ReactNode} from 'react';
+import { forwardRef, type ReactNode } from 'react';
 import { Button, type ButtonProps } from '../../root/Button.tsx';
 
 //-------------------------------------------------------------------------------------------------
 // IconButton Properties
 
 export interface IconButtonProps extends ButtonProps {
-    icon?: ReactNode;
+  icon?: ReactNode;
 }
-
 
 //--------------------------------------------------------------------------------------------------
 // IconButton - Component
 
-export const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(
-    ({ icon }, ref) => (
-        <Button className="p-0" variant="transparent" ref={ref}>
-            {icon}
-        </Button>
-    )
-);
+export const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(({ icon }, ref) => (
+  <Button className="p-0" variant="transparent" ref={ref}>
+    {icon}
+  </Button>
+));
