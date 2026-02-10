@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <>
       <Container as="section" className="h-auto p-3" debug>
-        <HeaderLayout debug></HeaderLayout>
+        <HeaderLayout debug className="p-10 bg-green-300"></HeaderLayout>
         <div className="pt-30">I'm Contact Page</div>
         <div className="">I'm Contact Page</div>
       </Container>
