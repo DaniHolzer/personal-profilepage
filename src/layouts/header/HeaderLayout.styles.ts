@@ -1,0 +1,13 @@
+import { tv } from "tailwind-variants";
+
+//-----------------------------------------------------------------------------
+// HeaderLayout Styles
+
+export const headerLayoutStyles = tv({
+  base: "fixed top-0 left-0 right-0 h-14",
+  variants: {
+    debug: {
+      true: "border-2 border-dashed border-blue-500 bg-blue-300",
+    },
+  },
+});
