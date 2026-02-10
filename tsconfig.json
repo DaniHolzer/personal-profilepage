@@ -1,4 +1,38 @@
 {
-  "files": [],
-  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
+  "compilerOptions": {  // ← "How TypeScript should check your code"
+    "target": "ES2022",    // What JS version to check against (modern browser stuff)
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],    // Extra browser/web APIs TypeScript should know about
+    "module": "preserve",    // "Keep modules exactly as written" (Vite handles this)
+    "types": ["vite/client", "node"],    // "Include these type packages globally"
+    "skipLibCheck": true,    // "Don't check huge node_modules folder" (saves time)
+    "isolatedModules": true,    // "Act like each file is its own island" (fast for Vite)
+    "esModuleInterop": true,    // "Let me import old CommonJS packages as if they're modern"
+    "resolveJsonModule": true,    // "I can import .json files"
+    "baseUrl": ".",    // "All imports are relative to this folder (project root)"
+    //SHORTCUTS
+    "paths": {
+      "~/*": ["./src/*"],           // import Button from "~/components/Button"
+      "components/*": ["./src/components/*"]  // import Button from "components/Button"
+    },
+
+    /* These 5 = "We're using a bundler like Vite" */
+    "allowImportingTsExtensions": true,  // Can import .tsx files directly
+    "verbatimModuleSyntax": true,        // Clean import/export syntax
+    "moduleDetection": "force",          // Always treat as modules
+    "noEmit": true,                      // "Don't create .js files" (Vite does)
+    "jsx": "react-jsx",                  // "Turn JSX into React stuff"
+
+    /* Linting = extra bug catchers */
+    "forceConsistentCasingInFileNames": true,  // No MyFile.ts vs myfile.ts
+    "strict": true,                          // ALL safety checks ON
+    "allowJs": true,                         // Can mix .js and .tsx files
+    "noUnusedLocals": true,                  // Delete unused variables
+    "noUnusedParameters": true,              // Delete unused function args
+    "erasableSyntaxOnly": true,              // Only check erasable syntax
+    "noFallthroughCasesInSwitch": true,      // Switch needs "break"
+    "noUncheckedSideEffectImports": true     // Check side-effect imports
+  },
+
+  // "Check these folders"
+  "include": ["src", "vite.config.ts"]
 }
