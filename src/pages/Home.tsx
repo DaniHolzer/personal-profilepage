@@ -1,4 +1,3 @@
-import { HomeMain } from '../layouts/homeMain/HomeMain.tsx';
 import { HeroContainer } from "components/container/variants/hero-container/HeroContainer.tsx";
 
 //-------------------------------------------------------------------------------------------------
@@ -7,7 +6,7 @@ import { HeroContainer } from "components/container/variants/hero-container/Hero
 export default function Home() {
   return (
     <>
-      <HeroContainer />
+      <HeroContainer debug />
     </>
   );
 }
