@@ -1,7 +1,7 @@
 import { headerLayoutStyles } from "./HeaderLayout.styles";
 import type { HeaderLayoutProps } from "./HeaderLayout.types";
 
-//------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 // HeaderLayout - Component
 
 export function HeaderLayout({ className, debug }: HeaderLayoutProps) {

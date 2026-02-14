@@ -1,15 +1,15 @@
-import { Button } from '../../root/Button';
+import { Button } from 'components/button/root/Button';
 import { useState } from 'react';
-import { HamburgerButton2LinesStyling } from './HamburgerButton2Lines.styles';
+import { hotdogButtonStyles } from './HotdogButton.styles';
 import { cx } from 'tailwind-variants';
 
 //-------------------------------------------------------------------------------------------------
 // Animated Menu Button Component
 
-export function HamburgerButton2Lines({ className }: { className?: string }) {
+export function HotdogButton({ className }: { className?: string }) {
   const [open, setOpen] = useState(false);
   const { base, line, lineTop, lineBottom, animationTop, animationBottom } =
-    HamburgerButton2LinesStyling({ size: 'md' });
+    hotdogButtonStyles({ size: 'md' });
 
   return (
     <Button onClick={() => setOpen(!open)} className={cx(className, base())} variant="transparent">

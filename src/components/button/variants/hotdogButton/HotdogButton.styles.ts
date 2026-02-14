@@ -3,7 +3,7 @@ import { tv } from 'tailwind-variants';
 //-------------------------------------------------------------------------------------------------
 // Animated Menu Button Styling
 
-export const HamburgerButton2LinesStyling = tv({
+export const hotdogButtonStyles = tv({
   slots: {
     base: 'relative',
     line: 'absolute left-0 w-full bg-gray-900 transition-transform duration-500',
