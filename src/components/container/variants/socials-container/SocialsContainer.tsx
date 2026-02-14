@@ -8,13 +8,27 @@ import type { SocialsProps } from "./SocialsContainer.types";
 export function SocialsContainer({className, debug}: SocialsProps) {
 
   return(
-    <Container id="socialsContainer" className={socialsStyles({className, debug})}>
-      <p className="border-1 border-blue-500">icon</p>
-      <p className="border-1 border-blue-500">icon</p>
-      <p className="border-1 border-blue-500">icon</p>
-      <p className="border-1 border-blue-500">icon</p>
-      <p className="border-1 border-blue-500">icon</p>
-      <p className="border-1 border-blue-500">icon</p>
+    <Container as="aside" id="socialsContainer" className={socialsStyles({className, debug})}>
+      <ul className="flex justify-between items-center flex-wrap gap-y-[2rem]">
+        <li>
+          <p className="border-1 border-blue-500">icon</p>
+        </li>
+        <li>
+          <p className="border-1 border-blue-500">icon</p>
+        </li>
+        <li>
+          <p className="border-1 border-blue-500">icon</p>
+        </li>
+        <li>
+          <p className="border-1 border-blue-500">icon</p>
+        </li>
+        <li>
+          <p className="border-1 border-blue-500">icon</p>
+        </li>
+        <li>
+          <p className="border-1 border-blue-500">icon</p>
+        </li>
+      </ul>
     </Container>
   )
 }

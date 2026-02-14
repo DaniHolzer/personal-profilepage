@@ -12,7 +12,7 @@ export function HeroContainer({className, debug}: HeroProps) {
 
   return(
     <Container
-      as="section"
+      as="div"
       id="heroContainer"
       className={heroStyles({className, debug})}
       debug
