@@ -22,7 +22,7 @@ export function HeroContainer({className, debug}: HeroProps) {
       </p>
       <Link
         id="heroContainer__link"
-        to="#"
+        to="/#aboutContainer"
         className="uppercase underline underline-offset-4 decoration-red-500"
         aria-label="Link to About page"
         title="About"

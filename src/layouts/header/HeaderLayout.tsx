@@ -12,7 +12,7 @@ export function HeaderLayout({ className, debug }: HeaderLayoutProps) {
     <header id="header" className={headerLayoutStyles({ className, debug })}>
       <Link
         id="header__logo"
-        to="#"
+        to="/"
         className="text-[2.4rem] underline underline-offset-4 decoration-red-500"
         children="Daniel Holzer"
         aria-label="Logo"

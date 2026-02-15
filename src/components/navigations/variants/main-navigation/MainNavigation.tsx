@@ -18,7 +18,7 @@ export function MainNavigation({ className, debug }: MainNavigationProps ) {
         <li>
           <Link
             id="mainNavigation__link-home"
-            to="#"
+            to="/"
             children="Home"
             className={navLinkStyles}
             title="Home"
