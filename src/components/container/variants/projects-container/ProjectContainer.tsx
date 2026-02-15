@@ -2,7 +2,7 @@ import { Container } from "components/container/base/Container";
 import { projectsContainerStyles } from "./ProjectContainer.styles";
 import type { ProjectsCotainerProps } from "./ProjectContainer.types";
 import { Heading } from "components/typography/headings/Heading";
-import { PortfolioCard } from "components/cards/portfolioCard/PortfolioCard";
+import { PortfolioCard } from "~/components/cards/variants/portfolioCard/PortfolioCard";
 
 //-------------------------------------------------------------------------------------------------
 // Projects Container - Component
@@ -26,8 +26,10 @@ export function ProjectsContainer({ className, debug }: ProjectsCotainerProps){
       <Container
         id="projectsContainer__cardsContainer"
         as="section"
-        className="p-[1rem] bg-rose-300 h-auto"
+        className="p-[1rem] bg-rose-300 h-auto gap-[1rem]"
       >
+        <PortfolioCard />
+        <PortfolioCard />
         <PortfolioCard />
       </Container>
     </Container>

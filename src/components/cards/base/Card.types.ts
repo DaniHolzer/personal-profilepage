@@ -1,10 +1,10 @@
 import type { VariantProps } from "tailwind-variants";
-import type { projectCardStyles } from "./ProjectCard.styles";
+import type { cardStyles } from "./Card.styles";
 
 //-----------------------------------------------------------------------------
 // Project Card Properties
 
-export interface ProjectCardProps extends VariantProps<typeof projectCardStyles> {
+export interface CardProps extends VariantProps<typeof cardStyles> {
   className?: string;
   id?: string;
   children: React.ReactNode;

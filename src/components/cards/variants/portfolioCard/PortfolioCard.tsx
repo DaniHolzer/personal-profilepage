@@ -1,18 +1,21 @@
 import { Heading } from "components/typography/headings/Heading";
-import { ProjectCard } from "components/cards/projectCard/ProjectCard";
+import { Card } from "~/components/cards/base/Card";
+import {
+  portfolioCardStyles,
+  cardHeadingStyling,
+  cardInfoStyling,
+  cardTagContainerStyling
+} from "./PortfolioCard.styles";
 
 //-------------------------------------------------------------------------------------------------
 // Project Card - Component
 
 export function PortfolioCard({className}: {className?: string}) {
-  const cardHeadingStyling = "mb-[1rem]";
-  const cardInfoStyling = "text-[1rem] mb-[1rem]";
-  const cardTagContainerStyling = "flex justify-center items-center gap-[0.5rem] flex-wrap";
 
   return(
-    <ProjectCard
+    <Card
       id="portfolioCard"
-      className={className}
+      className={portfolioCardStyles({className})}
       debug
     >
       <Heading.H5
@@ -49,6 +52,6 @@ export function PortfolioCard({className}: {className?: string}) {
           React
         </p>
       </div>
-    </ProjectCard>
+    </Card>
   );
 }

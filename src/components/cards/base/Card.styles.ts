@@ -1,10 +1,10 @@
 import { tv } from "tailwind-variants";
 
 //-----------------------------------------------------------------------------
-// Project Card Styles
+// Card Styles
 
-export const projectCardStyles = tv({
-  base: "items-center h-auto p-[2rem] rounded-3xl shadow-xl",
+export const cardStyles = tv({
+  base: "h-auto p-[2rem] rounded-xl shadow-lg",
   variants: {
     debug: {
       true: "border-2 border-dashed border-amber-500 bg-amber-300"
