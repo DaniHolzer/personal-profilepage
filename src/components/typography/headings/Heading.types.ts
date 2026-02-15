@@ -10,7 +10,7 @@ type HeadingElement = `h${HeadingLevel}`;
 export interface HeadingProps extends Omit<VariantProps<typeof headingStyles>, 'level'> {
   id?: string;
   text: string;
-  className: string;
+  className?: string;
 };
 
 export interface HeadingBaseProps extends HeadingProps {

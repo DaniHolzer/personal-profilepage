@@ -17,7 +17,7 @@ export function HeroContainer({className, debug}: HeroProps) {
       className={heroStyles({className, debug})}
       debug
     >
-      <p className="text-[1.8rem] text-center mb-[1rem]" id="heroContainer__p">
+      <p className="text-[1.8rem] text-center mb-[1rem]" id="heroContainer__intro">
         Lorem ipsum dolor sit amet, consta adipiscing elit.
       </p>
       <Link

@@ -38,7 +38,7 @@ export function AboutContainer({ className, debug}: AboutProps) {
           text="Hi, I'm Daniel"
           className="mb-[0.5rem]"
         />
-        <p id="aboutContainer__article__info" className="font-bold text-xl mb-[2rem]">
+        <p id="aboutContainer__article__intro" className="font-bold text-xl mb-[2rem]">
           a self-taught software engineering student from South Tyrol.
         </p>
         <p id="aboutContainer__article__study" className="mb-[1rem]">
