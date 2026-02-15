@@ -11,3 +11,5 @@ export const mainNavigationStyles = tv({
     },
   },
 });
+
+export const navLinkStyles = "test-2xl";
