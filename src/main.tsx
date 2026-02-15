@@ -5,6 +5,9 @@ import './index.css';
 import { RootLayout } from "~/layouts/root/RootLayout.tsx";
 import Home from '~/pages/Home.tsx';
 import Contact from '~/pages/Contact.tsx';
+import Projects from "~/pages/Projects";
+import Skills from "~/pages/Skills";
+import Resume from "~/pages/Resume";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -13,6 +16,9 @@ createRoot(document.getElementById('root')!).render(
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </RootLayout>
     </BrowserRouter>
