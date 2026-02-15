@@ -1,5 +1,4 @@
-import { Container } from "components/container/base/Container";
-import { HeaderLayout } from "~/layouts/header/HeaderLayout";
+import { ContactContainer} from "~/components/container/variants/contact-container/Contact";
 
 //-------------------------------------------------------------------------------------------------
 // Contact Page - Component
@@ -7,11 +6,7 @@ import { HeaderLayout } from "~/layouts/header/HeaderLayout";
 export default function Contact() {
   return (
     <>
-      {/* <Container as="section" className="h-auto p-3" debug>
-        <HeaderLayout debug className="p-10 bg-green-300"></HeaderLayout>
-        <div className="pt-30">I'm Contact Page</div>
-        <div className="">I'm Contact Page</div>
-      </Container> */}
+      <ContactContainer debug/>
     </>
   );
 }

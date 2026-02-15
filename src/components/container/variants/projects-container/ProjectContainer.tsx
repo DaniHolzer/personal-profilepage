@@ -2,7 +2,7 @@ import { Container } from "components/container/base/Container";
 import { projectsContainerStyles } from "./ProjectContainer.styles";
 import type { ProjectsCotainerProps } from "./ProjectContainer.types";
 import { Heading } from "components/typography/headings/Heading";
-import { PortfolioCard } from "~/components/cards/variants/portfolioCard/PortfolioCard";
+import { PortfolioCard } from "~/components/cards/variants/portfolio-card/PortfolioCard";
 
 //-------------------------------------------------------------------------------------------------
 // Projects Container - Component
