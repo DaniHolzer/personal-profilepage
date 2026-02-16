@@ -4,6 +4,7 @@ import type {DocumentProps} from "./Document.types";
 import { Heading } from "components/typography/headings/Heading";
 import { CvCard } from "components/cards/variants/document-cards/CvCard";
 import { CompTIAACard } from "components/cards/variants/document-cards/CompTIAACard";
+import { CompTIAITFCard } from "components/cards/variants/document-cards/CompTIAITFCard";
 
 //-------------------------------------------------------------------------------------------------
 // Document Container - Component
@@ -37,7 +38,7 @@ export function DocumentContainer({className, debug}: DocumentProps ) {
       >
         <CvCard />
         <CompTIAACard />
-        <CvCard />
+        <CompTIAITFCard />
 
       </Container>
     </Container>
