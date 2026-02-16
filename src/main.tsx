@@ -7,7 +7,7 @@ import Home from '~/pages/Home.tsx';
 import Contact from '~/pages/Contact.tsx';
 import Projects from "~/pages/Projects";
 import Skills from "~/pages/Skills";
-import Resume from "~/pages/Resume";
+import Documents from "~/pages/Documents";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -18,7 +18,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/documents" element={<Documents />} />
         </Routes>
       </RootLayout>
     </BrowserRouter>

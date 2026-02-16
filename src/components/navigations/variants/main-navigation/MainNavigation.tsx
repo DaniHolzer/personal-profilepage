@@ -57,12 +57,12 @@ export function MainNavigation({ className, debug }: MainNavigationProps ) {
         </li>
         <li>
           <Link
-            id="mainNavigation__link-resume"
-            to="resume"
-            children="Resume"
+            id="mainNavigation__link-documents"
+            to="documents"
+            children="Documents"
             className={navLinkStyles}
-            title="Resume"
-            aria-label="Link to Resume page"
+            title="Documents"
+            aria-label="Link to Documents page"
           />
         </li>
         <li>
