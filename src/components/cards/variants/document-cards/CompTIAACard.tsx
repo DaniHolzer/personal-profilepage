@@ -7,28 +7,28 @@ import { FileDownloadIcon } from "components/icons/Icons";
 //-------------------------------------------------------------------------------------------------
 // Document Card - Component
 
-export function CvCard({className}: {className?: string}){
+export function CompTIAACard({className}: {className?: string}){
   return(
     <Card
-      id="cvCard"
+      id="CompTIA-A+Card"
       className={documentCardStyles({className})}
       debug
     >
       <Heading.H2
-        id="cvCard__heading"
-        text="CV"
+        id="CompTIA-A+Card__heading"
+        text="CompTIA A+"
         className="mb-[1rem]"
       />
       <p
-        id="cvCard__info"
+        id="CompTIA-A+Card__info"
         className=" text-[1.4rem] mb-[0.5rem]"
       >
-        Daniel Holzer
+        05-17-2025
       </p>
       <LinkButton
-        href="/CompTIA-ITF+-cert.pdf"
+        href="/CompTIA-A+-cert.pdf"
         download
-        id="cvCard__linkButton"
+        id="CompTIA-A+Card__linkButton"
         fullWidth
         variant="primary"
         size="icon"

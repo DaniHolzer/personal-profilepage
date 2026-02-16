@@ -1,4 +1,4 @@
-import { CvCard } from "~/components/cards/variants/document-cards/CvCard";
+import { DocumentContainer } from "components/container/variants/document-container/Document";
 
 //-------------------------------------------------------------------------------------------------
 // Resume Page - Component
@@ -6,7 +6,7 @@ import { CvCard } from "~/components/cards/variants/document-cards/CvCard";
 export default function Resume() {
   return(
     <>
-      <CvCard />
+      <DocumentContainer />
     </>
   );
 }

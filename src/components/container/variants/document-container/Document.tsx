@@ -3,6 +3,7 @@ import { documentStyles } from "./Document.styles";
 import type {DocumentProps} from "./Document.types";
 import { Heading } from "components/typography/headings/Heading";
 import { CvCard } from "components/cards/variants/document-cards/CvCard";
+import { CompTIAACard } from "components/cards/variants/document-cards/CompTIAACard";
 
 //-------------------------------------------------------------------------------------------------
 // Document Container - Component
@@ -28,7 +29,17 @@ export function DocumentContainer({className, debug}: DocumentProps ) {
       >
         Here are my Documents. You can download them below.
       </p>
+      <Container
+        as="section"
+        id="documentContainer__cardsContainer"
+        className="items-center gap-[1.5rem]"
+        debug
+      >
+        <CvCard />
+        <CompTIAACard />
+        <CvCard />
 
+      </Container>
     </Container>
   );
 }
