@@ -41,7 +41,7 @@ export function SkillsContainer({className, debug}: SkillsContainerProps ) {
           title="Neovim"
         />
         <SkillIcon
-          id="nvimIcon"
+          id="ubuntuIcon"
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original-wordmark.svg"
           alt="Ubuntu Icon"
           title="Ubuntu"

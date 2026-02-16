@@ -1,4 +1,5 @@
-import { HeaderLayout } from "../header/HeaderLayout";
+import { HeaderLayout } from "src/layouts/header/HeaderLayout";
+import { FooterLayout } from "src/layouts/footer/FooterLayout";
 
 //-----------------------------------------------------------------------------
 // Root Layout - Component
@@ -9,7 +10,7 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
     <>
       <HeaderLayout debug />
       <main className="pt-[6rem]">{ children }</main>
-      <footer className="align-bottom h-20 bg-green-300">I'm the footer</footer>
+      <FooterLayout debug />
     </>
   );
 }
