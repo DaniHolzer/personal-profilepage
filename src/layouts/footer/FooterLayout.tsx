@@ -21,7 +21,7 @@ export function FooterLayout({className, debug}: FooterLayoutProps) {
       </p>
       <Link
         id="footer__link"
-        to="#"
+        to="impressum"
         className=""
         children="Impressum"
         aria-label="Link to impressum page"
