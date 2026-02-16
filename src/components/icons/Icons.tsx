@@ -5,4 +5,5 @@ export {
   FaTwitter as XIcon,
   FaInstagram as InstagramIcon,
   FaDiscord as DiscordIcon,
+  FaFileDownload as FileDownloadIcon,
 } from "react-icons/fa";

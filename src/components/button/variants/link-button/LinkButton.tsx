@@ -11,13 +11,16 @@ export function LinkButton({
   variant,
   size,
   fullWidth,
-  children}: LinkButtonProps) {
+  children,
+  ...props
+}: LinkButtonProps) {
   const generatedId = useId();
 
   return(
     <a
       id={ id ?? generatedId }
       className={buttonStyles({ className, variant, size, fullWidth })}
+      {...props}
     >
       { children }
     </a>
