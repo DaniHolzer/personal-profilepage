@@ -1,4 +1,4 @@
-import { CvCard } from "~/components/cards/variants/cv-card/CvCard";
+import { CvCard } from "~/components/cards/variants/document-cards/CvCard";
 
 //-------------------------------------------------------------------------------------------------
 // Resume Page - Component
