@@ -1,5 +1,5 @@
 import { forwardRef, type ReactNode } from 'react';
-import { Button, type ButtonProps } from '../../root/Button.tsx';
+import { Button, type ButtonProps } from '../../base/Button.tsx';
 
 //-------------------------------------------------------------------------------------------------
 // IconButton Properties

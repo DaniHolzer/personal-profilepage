@@ -1,4 +1,4 @@
-import { Button } from 'components/button/root/Button';
+import { Button } from '~/components/button/base/Button';
 import { useState } from 'react';
 import { hotdogButtonStyles } from './HotdogButton.styles';
 import { cx } from 'tailwind-variants';
