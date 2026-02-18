@@ -6,12 +6,12 @@ import { Link } from "components/links/base/Link";
 //-----------------------------------------------------------------------------
 // Main Navigation - Component
 
-export function MainNavigation({ className, debug }: MainNavigationProps ) {
+export function MainNavigation({ className, debug, animation, onClose}: MainNavigationProps ) {
 
   return(
     <Navigation
       id="main-navigation"
-      className={mainNavigationStyles({ className, debug })}
+      className={mainNavigationStyles({ className, debug, animation })}
       debug={ debug }
     >
       <ul className="flex flex-col items-center justify-start gap-[1rem]">
@@ -23,6 +23,7 @@ export function MainNavigation({ className, debug }: MainNavigationProps ) {
             className={navLinkStyles}
             title="Home"
             aria-label="Link to Home page"
+            onClick={onClose}
           />
         </li>
         <li>
@@ -33,6 +34,7 @@ export function MainNavigation({ className, debug }: MainNavigationProps ) {
             className={navLinkStyles}
             title="About"
             aria-label="Link to About page"
+            onClick={onClose}
           />
         </li>
         <li>
@@ -43,6 +45,7 @@ export function MainNavigation({ className, debug }: MainNavigationProps ) {
             className={navLinkStyles}
             title="Projects"
             aria-label="Link to Projects page"
+            onClick={onClose}
           />
         </li>
         <li>
@@ -53,6 +56,7 @@ export function MainNavigation({ className, debug }: MainNavigationProps ) {
             className={navLinkStyles}
             title="Skills"
             aria-label="Link to Skills page"
+            onClick={onClose}
           />
         </li>
         <li>
@@ -63,6 +67,7 @@ export function MainNavigation({ className, debug }: MainNavigationProps ) {
             className={navLinkStyles}
             title="Documents"
             aria-label="Link to Documents page"
+            onClick={onClose}
           />
         </li>
         <li>
@@ -73,6 +78,7 @@ export function MainNavigation({ className, debug }: MainNavigationProps ) {
             className={navLinkStyles}
             title="Contact"
             aria-label="Link to Contact page"
+            onClick={onClose}
           />
         </li>
       </ul>

@@ -45,7 +45,8 @@ export function HeaderLayout({ className, debug }: HeaderLayoutProps) {
 
       {isNavOpen && (
         <MainNavigation
-          debug={debug}
+          animation="open"
+          onClose={() => setIsNavOpen(false)}
         />
       )}
     </>

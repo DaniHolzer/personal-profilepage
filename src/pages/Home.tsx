@@ -8,7 +8,7 @@ import { MainNavigation } from "components/navigations/variants/main-navigation/
 export default function Home() {
   return (
     <>
-      <MainNavigation debug />
+{/*       <MainNavigation debug /> */}
       <HeroContainer debug />
       <AboutContainer debug />
     </>

@@ -5,5 +5,6 @@ import type { mainNavigationStyles } from "./MainNavigation.styles";
 // Main Vavigation Properties
 
 export interface MainNavigationProps extends VariantProps<typeof mainNavigationStyles> {
-    className?: string;
+  className?: string;
+  onClose?: () => void;
 };

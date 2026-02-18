@@ -8,7 +8,7 @@ import { isExternalUrl } from "./Link.utils";
 // Link - Component
 
 export const Link = forwardRef<HTMLAnchorElement, LinkProps> (
-  ({ id, to, children, className, title, debug, 'aria-label': ariaLabel }, ref) => {
+  ({ id, to, children, className, title, debug, 'aria-label': ariaLabel, ...props}, ref) => {
     const generatedId = useId();
     const classes = linkStyles({ className, debug });
     const externalLink = isExternalUrl(to);
@@ -39,6 +39,7 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps> (
         className={classes}
         title={title}
         aria-label={ariaLabel}
+        {...props}
       >
         { children }
       </RouterLink>

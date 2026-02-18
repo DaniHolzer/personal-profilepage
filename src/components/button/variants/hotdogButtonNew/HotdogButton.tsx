@@ -1,5 +1,4 @@
 import { Button } from '~/components/button/base/Button';
-import { useState } from 'react';
 import { hotdogButtonStyles } from './HotdogButton.styles';
 import type { HotdogButtonProps } from "./HotdogButton.types";
 import { cx } from 'tailwind-variants';
@@ -24,9 +23,9 @@ export function HotdogButton({
       {...props}
     >
       {/* line top */}
-      <span className={cx(line(), lineTop(), isOpen && animationTop())} />
+      <span className={cx(line(), lineTop(), isOpen && animationTop())} aria-hidden />
       {/* line bottom */}
-      <span className={cx(line(), lineBottom(), isOpen && animationBottom())} />
+      <span className={cx(line(), lineBottom(), isOpen && animationBottom())} aria-hidden/>
     </Button>
   );
 }
