@@ -10,6 +10,7 @@ import Skills from "~/pages/Skills";
 import Documents from "~/pages/Documents";
 import SiteNotice from "~/pages/SiteNotice";
 
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>

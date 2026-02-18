@@ -4,12 +4,6 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      colors: {
-        bgPrimary: "#242424",
-        bgSecondary: "#44403B",
-        textPrimary: "#ddd",
-        textSecondary: "#999"
-      }
     },
   },
   plugins: [],

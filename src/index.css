@@ -6,6 +6,16 @@
   font-size: 62.5%;
 }
 
+@theme {
+  --color-bgPrimary: #242424;
+  --color-bgSecondary: #44403B;
+  --color-textPrimary: #ddd;
+  --color-textSecondary: #999;
+}
+
+
+
+
 /* :root { */
 /*   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
 /*   line-height: 1.5; */

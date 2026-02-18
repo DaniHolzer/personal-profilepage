@@ -5,6 +5,7 @@ import { Link } from "components/links/base/Link";
 import skiingImage from "src/assets/skiing.jpg";
 import { SocialsContainer } from "components/container/variants/socials-container/SocialsContainer";
 
+
 //-----------------------------------------------------------------------------
 // Hero Section Component
 
@@ -22,14 +23,14 @@ export function HeroContainer({className, debug}: HeroProps) {
       <Link
         id="heroContainer__link"
         to="#aboutContainer"
-        className="uppercase underline underline-offset-4 decoration-red-500"
+        className="uppercase underline underline-offset-4 decoration-red-500 text-textPrimary"
         aria-label="Link to About page"
         title="About"
       >
         More about me
       </Link>
-      <img src={ skiingImage } className="w-[20rem] h-[20rem] my-[6.5rem]"/>
-      <SocialsContainer debug />
+      <img src={ skiingImage } className="w-[20rem] h-[20rem] my-[6.5rem] rounded-2xl"/>
+      <SocialsContainer/>
 
     </Container>
   )
