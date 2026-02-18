@@ -21,11 +21,11 @@ export function FooterLayout({className, debug}: FooterLayoutProps) {
       </p>
       <Link
         id="footer__link"
-        to="impressum"
+        to="sitenotice"
         className=""
-        children="Impressum"
-        aria-label="Link to impressum page"
-        title="Impressum"
+        children="Site Notice"
+        aria-label="Link to site notice page"
+        title="Site Notice"
       />
     </footer>
   );

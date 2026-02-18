@@ -1,38 +1,38 @@
 import { Container } from "components/container/base/Container";
 import {
-  impressumContainerStyles,
-  impressumHeadingStyles
-} from "./ImpressumContainer.styles";
-import type { ImpressumContainerProps } from "./ImpressumContainer.types";
+  siteNoticeContainerStyles,
+  siteNoticeHeadingStyles
+} from "./SiteNoticeContainer.styles";
+import type { SiteNoticeContainerProps } from "./SiteNoticeContainer.types";
 import { Heading } from "components/typography/headings/Heading";
 
 //-------------------------------------------------------------------------------------------------
-// Skills Container - Component
+// Site Notice Container - Component
 
-export function ImpressumContainer({className, debug}: ImpressumContainerProps ) {
+export function SiteNoticeContainer({className, debug}: SiteNoticeContainerProps ) {
 
   return(
     <Container
       as="section"
-      id="impressumContainer"
-      className={impressumContainerStyles({className, debug})}
+      id="siteNoticeContainer"
+      className={siteNoticeContainerStyles({className, debug})}
       debug
     >
       <Heading.H1
-        id="impressumContainer__h1"
-        text="Impressum"
+        id="siteNoticeContainer__h1"
+        text="site Notice"
         className="uppercase"
         debug
       />
       <section
-        id="impressumContainer__ownerInfo"
+        id="siteNotice__ownerInfo"
       >
         <Heading.H5
           text="Website Owner"
-          className={impressumHeadingStyles}
+          className={siteNoticeHeadingStyles}
         />
         <p
-          id="impressumContainer__address"
+          id="siteNotice__address"
         >
           <strong>Daniel Holzer</strong><br />
           Innerprags 37<br />
@@ -40,7 +40,7 @@ export function ImpressumContainer({className, debug}: ImpressumContainerProps )
           Italy
         </p>
         <p
-          id="impressumContainer__contact"
+          id="siteNotice__contact"
         >
           <strong>Contact Information:</strong><br />
           Phone: +39 3441186574<br />
@@ -48,22 +48,22 @@ export function ImpressumContainer({className, debug}: ImpressumContainerProps )
         </p>
       </section>
       <section
-        id="impressumContainer__taxInfo"
+        id="siteNotice__taxInfo"
       >
         <Heading.H5
           text="Tax Information"
-          className={impressumHeadingStyles}
+          className={siteNoticeHeadingStyles}
         />
         <p>
           Codice Fiscale: HLZDNL01P25F132O<br />
         </p>
       </section>
       <section
-        id="impressumContainer__techInfo"
+        id="siteNotice__techInfo"
       >
         <Heading.H5
           text="Technical Information"
-          className={impressumHeadingStyles}
+          className={siteNoticeHeadingStyles}
         />
         <p>
           Hosting: Netlify<br />
@@ -72,11 +72,11 @@ export function ImpressumContainer({className, debug}: ImpressumContainerProps )
         </p>
       </section>
       <section
-        id="impressumContainer__disclaimer"
+        id="siteNotice__disclaimer"
       >
         <Heading.H5
           text="Disclaimer"
-          className={impressumHeadingStyles}
+          className={siteNoticeHeadingStyles}
         />
         <p>
           This website serves personal and informational purposes only.
@@ -89,11 +89,11 @@ export function ImpressumContainer({className, debug}: ImpressumContainerProps )
         </p>
       </section>
       <section
-        id="impressumContainer__privacy"
+        id="siteNotice__privacy"
       >
         <Heading.H5
           text="Privacy Policy Summary"
-          className={impressumHeadingStyles}
+          className={siteNoticeHeadingStyles}
         />
         <p>
           No cookies are used. No personal data collection occurs beyond standard
@@ -103,11 +103,11 @@ export function ImpressumContainer({className, debug}: ImpressumContainerProps )
         </p>
       </section>
       <section
-        id="impressumContainer__law"
+        id="siteNotice__law"
       >
         <Heading.H5
           text="Applicable Law"
-          className={impressumHeadingStyles}
+          className={siteNoticeHeadingStyles}
         />
         <p>
           Italian law applies. Competent courts: [Bolzano/Bozen] for disputes.

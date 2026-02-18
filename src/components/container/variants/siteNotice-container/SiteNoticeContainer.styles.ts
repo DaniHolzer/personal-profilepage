@@ -1,9 +1,9 @@
 import { tv } from "tailwind-variants";
 
 //-----------------------------------------------------------------------------
-// Impressum Container Styles
+// Site Notice Container Styles
 
-export const impressumContainerStyles = tv({
+export const siteNoticeContainerStyles = tv({
   base: "px-[2.5rem] py-[3rem] gap-[2rem] text-[0.8rem]",
   variants: {
     debug: {
@@ -12,4 +12,4 @@ export const impressumContainerStyles = tv({
   },
 });
 
-export const impressumHeadingStyles = "mb-[0.5rem]";
+export const siteNoticeHeadingStyles = "mb-[0.5rem]";
