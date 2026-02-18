@@ -24,6 +24,7 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps> (
           aria-label={ariaLabel}
           target="_blank"
           rel="noopener noreferer"
+          {...props}
         >
           { children }
         </a>

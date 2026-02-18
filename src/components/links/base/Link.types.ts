@@ -16,3 +16,9 @@ export interface LinkProps extends VariantProps<typeof linkStyles>,
   title?: string;
   'aria-label'?: string;
 };
+
+/* LinkProps = VariantProps (your styles)
+               + RouterLinkProps (to, replace, state)
+               + AnchorHTMLAttributes (onClick, disabled, aria-*)
+               - ref (handled by forwardRef)
+               + your custom props (id, debug) */

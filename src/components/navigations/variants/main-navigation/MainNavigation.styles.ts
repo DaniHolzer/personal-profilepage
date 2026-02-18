@@ -9,10 +9,6 @@ export const mainNavigationStyles = tv({
     debug: {
       true: "border-2 border-dashed border-purple-500 bg-purple-300",
     },
-    animation: {
-      open: "translate-y-0",
-      closed: "-translate-y-full",
-    },
   },
 });
 

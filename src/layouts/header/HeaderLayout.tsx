@@ -38,6 +38,7 @@ export function HeaderLayout({ className, debug }: HeaderLayoutProps) {
         <HotdogButton
           isOpen={isNavOpen}
           onClick={toggleNav}
+          aria-label="Toggle navigation"
           aria-expanded={isNavOpen}
           aria-controls="main-navigation"
         />
@@ -45,8 +46,7 @@ export function HeaderLayout({ className, debug }: HeaderLayoutProps) {
 
       {isNavOpen && (
         <MainNavigation
-          animation="open"
-          onClose={() => setIsNavOpen(false)}
+          onLinkClick={toggleNav}
         />
       )}
     </>

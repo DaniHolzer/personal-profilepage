@@ -10,7 +10,6 @@ export function HotdogButton({
   className,
   isOpen,
   onClick,
-  ...props
 }:HotdogButtonProps) {
   const { base, line, lineTop, lineBottom, animationTop, animationBottom } =
     hotdogButtonStyles({ size: 'md' });
@@ -20,7 +19,6 @@ export function HotdogButton({
       onClick={onClick}
       className={cx(className, base())}
       variant="ghost"
-      {...props}
     >
       {/* line top */}
       <span className={cx(line(), lineTop(), isOpen && animationTop())} aria-hidden />

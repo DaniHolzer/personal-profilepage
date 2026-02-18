@@ -6,5 +6,5 @@ import type { mainNavigationStyles } from "./MainNavigation.styles";
 
 export interface MainNavigationProps extends VariantProps<typeof mainNavigationStyles> {
   className?: string;
-  onClose?: () => void;
+  onLinkClick?: () => void;
 };
