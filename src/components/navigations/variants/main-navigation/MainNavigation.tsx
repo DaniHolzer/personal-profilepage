@@ -29,7 +29,7 @@ export function MainNavigation({ className, debug, onLinkClick}: MainNavigationP
         <li>
           <Link
             id="mainNavigation__link-about"
-            to="#aboutContainer"
+            to="/#aboutContainer"
             children="About"
             className={navLinkStyles}
             title="About"

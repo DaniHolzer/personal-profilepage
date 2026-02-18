@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
 {/*       <MainNavigation debug /> */}
-      <HeroContainer debug />
+      <HeroContainer/>
       <AboutContainer debug />
     </>
   );

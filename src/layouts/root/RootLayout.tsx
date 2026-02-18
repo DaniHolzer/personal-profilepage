@@ -8,8 +8,8 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
 
   return(
     <>
-      <HeaderLayout debug/>
-      <main className="pt-[6rem]">{ children }</main>
+      <HeaderLayout/>
+      <main className="pt-[5.6rem]">{ children }</main>
       <FooterLayout debug />
     </>
   );
