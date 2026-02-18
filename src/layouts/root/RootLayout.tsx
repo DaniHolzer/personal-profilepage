@@ -8,7 +8,7 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
 
   return(
     <>
-      <HeaderLayout debug />
+      <HeaderLayout debug/>
       <main className="pt-[6rem]">{ children }</main>
       <FooterLayout debug />
     </>

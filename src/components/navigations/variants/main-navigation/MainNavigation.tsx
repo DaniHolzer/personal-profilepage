@@ -29,11 +29,11 @@ export function MainNavigation({ className, debug, onLinkClick}: MainNavigationP
         <li>
           <Link
             id="mainNavigation__link-about"
-            to="/#aboutContainer"
+            to="#aboutContainer"
             children="About"
             className={navLinkStyles}
             title="About"
-            aria-label="Link to About page"
+            aria-label="Link to About section"
             onClick={onLinkClick}
           />
         </li>
