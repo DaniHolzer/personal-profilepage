@@ -14,7 +14,7 @@ export function MainNavigation({ className, debug, onLinkClick}: MainNavigationP
       className={mainNavigationStyles({ className, debug })}
       debug={ debug }
     >
-      <ul className="flex flex-col items-center justify-start gap-[1rem]">
+      <ul className="flex flex-col items-center justify-start gap-[3rem]">
         <li>
           <Link
             id="mainNavigation__link-home"
