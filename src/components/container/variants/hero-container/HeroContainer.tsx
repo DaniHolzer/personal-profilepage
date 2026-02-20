@@ -18,12 +18,11 @@ export function HeroContainer({className, debug}: HeroProps) {
       className={heroStyles({className, debug})}
     >
       <p className="text-[1.8rem] text-center mb-[1rem] text-textPrimary" id="heroContainer__intro">
-        Lorem ipsum dolor sit amet, consta adipiscing elit.
-      </p>
+        Software Engineer from <br/> South Tyrol.      </p>
       <Link
         id="heroContainer__link"
         to="#aboutContainer"
-        className="uppercase underline underline-offset-4 decoration-red-500 text-textPrimary"
+        className="uppercase underline underline-offset-6 decoration-red-400 text-textSecondary hover:text-textPrimary"
         aria-label="Link to About page"
         title="About"
       >

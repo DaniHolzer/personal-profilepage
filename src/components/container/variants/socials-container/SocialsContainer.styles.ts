@@ -11,3 +11,6 @@ export const socialsStyles = tv({
     },
   },
 });
+
+export const iconStyles = "fill-textSecondary hover:fill-textPrimary hover:scale-110";
+export const iconSize = "24";
