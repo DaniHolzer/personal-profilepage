@@ -13,3 +13,4 @@ export const skillsContainerStyles = tv({
 });
 
 export const skillIconSize = "5rem";
+export const skillIconClass ="hover:scale-110";

@@ -1,5 +1,9 @@
 import { Container } from "components/container/base/Container";
-import { skillsContainerStyles, skillIconSize } from "./SkillsContainer.styles";
+import {
+ skillsContainerStyles,
+  skillIconSize,
+ skillIconClass
+} from "./SkillsContainer.styles";
 import type { SkillsContainerProps } from "./SkillsContainer.types";
 import { Heading } from "components/typography/headings/Heading";
 import ReactIcon from '@devicon/react/react/original-wordmark';
@@ -40,16 +44,16 @@ export function SkillsContainer({className, debug}: SkillsContainerProps ) {
         id="skillsContainer__container"
         className="flex-row flex-wrap gap-[2rem] justify-center"
       >
-        <UbuntuIcon size={skillIconSize} />
-        <NeovimIcon size={skillIconSize} />
-        <JiraIcon size={skillIconSize} />
-        <GitIcon size={skillIconSize} />
-        <HtmlIcon size={skillIconSize} />
-        <CssIcon size={skillIconSize} />
-        <TailwindCssIcon size={skillIconSize} />
-        <JavaScriptIcon size={skillIconSize} />
-        <ReactIcon size={skillIconSize} />
-        <TypeScriptIcon size={skillIconSize} />
+        <UbuntuIcon size={skillIconSize} className={skillIconClass}/>
+        <NeovimIcon size={skillIconSize} className={skillIconClass}/>
+        <JiraIcon size={skillIconSize} className={skillIconClass}/>
+        <GitIcon size={skillIconSize} className={skillIconClass}/>
+        <HtmlIcon size={skillIconSize} className={skillIconClass}/>
+        <CssIcon size={skillIconSize} className={skillIconClass}/>
+        <TailwindCssIcon size={skillIconSize} className={skillIconClass}/>
+        <JavaScriptIcon size={skillIconSize} className={skillIconClass}/>
+        <ReactIcon size={skillIconSize} className={skillIconClass}/>
+        <TypeScriptIcon size={skillIconSize} className={skillIconClass}/>
 
       </Container>
     </Container>
