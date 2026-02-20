@@ -2,6 +2,8 @@ import { Card } from "components/cards/base/Card";
 import { Heading } from "components/typography/headings/Heading";
 import {
   documentCardStyles,
+  headingClass,
+  infoClass,
   downloadButtonClass,
   downloadIconSize,
   downloadIconClass
@@ -18,14 +20,14 @@ export function CvCard({className}: {className?: string}){
       id="cvCard"
       className={documentCardStyles({className})}
     >
-      <Heading.H2
+      <Heading.H3
         id="cvCard__heading"
         text="CV"
-        className="mb-[1rem]"
+        className={headingClass}
       />
       <p
         id="cvCard__info"
-        className=" text-[1.4rem] mb-[0.5rem]"
+        className={infoClass}
       >
         Daniel Holzer
       </p>

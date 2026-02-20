@@ -15,13 +15,11 @@ export function ContactContainer({ className, debug}: ContactProps) {
       as="section"
       id="contactContainer"
       className={contactStyles({className, debug})}
-      debug
     >
       <Heading.H1
         id="contactContainer__h1"
         text="Contact"
         className="uppercase"
-        debug
       />
       <img
         id="contactContainer__profilefoto"

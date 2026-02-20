@@ -2,6 +2,8 @@ import { Card } from "components/cards/base/Card";
 import { Heading } from "components/typography/headings/Heading";
 import {
   documentCardStyles,
+  headingClass,
+  infoClass,
   downloadButtonClass,
   downloadIconSize,
   downloadIconClass
@@ -18,14 +20,14 @@ export function CompTIAACard({className}: {className?: string}){
       id="CompTIA-A+Card"
       className={documentCardStyles({className})}
     >
-      <Heading.H2
+      <Heading.H3
         id="CompTIA-A+Card__heading"
         text="CompTIA A+"
-        className="mb-[1rem]"
+        className={headingClass}
       />
       <p
         id="CompTIA-A+Card__info"
-        className=" text-[1.4rem] mb-[0.5rem]"
+        className={infoClass}
       >
         05-17-2025
       </p>

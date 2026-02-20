@@ -18,7 +18,7 @@ export function PortfolioCard({className}: {className?: string}) {
       id="portfolioCard"
       className={portfolioCardStyles({className})}
     >
-      <Heading.H5
+      <Heading.H3
         id="projectsContainer__cardsContainer__card-profilePage__heading"
         text="Protfolio Website"
         className={cardHeadingStyling}

@@ -6,7 +6,7 @@ import { ContactContainer} from "~/components/container/variants/contact-contain
 export default function Contact() {
   return (
     <>
-      <ContactContainer debug/>
+      <ContactContainer />
     </>
   );
 }
