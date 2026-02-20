@@ -6,7 +6,7 @@ import { SkillsContainer } from "components/container/variants/skills-container/
 export default function Skills() {
   return(
     <>
-      <SkillsContainer debug/>
+      <SkillsContainer />
     </>
   );
 }

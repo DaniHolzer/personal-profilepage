@@ -1,8 +1,17 @@
 import { Container } from "components/container/base/Container";
-import { skillsContainerStyles } from "./SkillsContainer.styles";
+import { skillsContainerStyles, skillIconSize } from "./SkillsContainer.styles";
 import type { SkillsContainerProps } from "./SkillsContainer.types";
 import { Heading } from "components/typography/headings/Heading";
-import { SkillIcon } from "components/icons/SkillIcons";
+import ReactIcon from '@devicon/react/react/original-wordmark';
+import NeovimIcon from '@devicon/react/neovim/plain-wordmark';
+import UbuntuIcon from '@devicon/react/ubuntu/plain-wordmark';
+import JiraIcon from "@devicon/react/jira/plain-wordmark";
+import GitIcon from "@devicon/react/git/plain-wordmark";
+import HtmlIcon from '@devicon/react/html5/plain-wordmark';
+import CssIcon from '@devicon/react/css3/plain-wordmark';
+import JavaScriptIcon from '@devicon/react/javascript/original';
+import TailwindCssIcon from "@devicon/react/tailwindcss/plain-wordmark";
+import TypeScriptIcon from "@devicon/react/typescript/original";
 
 //-------------------------------------------------------------------------------------------------
 // Skills Container - Component
@@ -14,13 +23,11 @@ export function SkillsContainer({className, debug}: SkillsContainerProps ) {
       as="section"
       id="skillsContainer"
       className={skillsContainerStyles({className, debug})}
-      debug
     >
       <Heading.H1
         id="skillsContainer__h1"
         text="Skills"
         className="uppercase mb-[2rem]"
-        debug
       />
       <p
         id="skillsContainer__intro"
@@ -32,68 +39,18 @@ export function SkillsContainer({className, debug}: SkillsContainerProps ) {
         as="div"
         id="skillsContainer__container"
         className="flex-row flex-wrap gap-[2rem] justify-center"
-        debug
       >
-        <SkillIcon
-          id="nvimIcon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neovim/neovim-original-wordmark.svg"
-          alt="Neovim Icon"
-          title="Neovim"
-        />
-        <SkillIcon
-          id="ubuntuIcon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original-wordmark.svg"
-          alt="Ubuntu Icon"
-          title="Ubuntu"
-        />
-        <SkillIcon
-         id="jiraIcon"
-         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg"
-         alt="Jira Icon"
-         title="Jira"
-        />
-        <SkillIcon
-          id="gitIcon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg"
-          alt="Git Icon"
-          title="Git"
-        />
-        <SkillIcon
-          id="htmlIcon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
-          alt="HTML5 icon"
-          title="HTML"
-        />
-        <SkillIcon
-          id="cssIcon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
-          alt="CSS Icon"
-          title="CSS"
-        />
-        <SkillIcon
-          id="tailwindCssIcon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg"
-          alt="Tailwindcss Icon"
-          title="TailwindCss"
-        />
-        <SkillIcon
-          id="javaScriptIcon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-          alt="JavaScript Icon"
-          title="JavaScript"
-        />
-        <SkillIcon
-          id="reactIcon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
-          alt="React Icon"
-          title="React"
-        />
-        <SkillIcon
-          id="typeScriptIcon"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-          alt="TypeScript Icon"
-          title="TypeScript"
-        />
+        <UbuntuIcon size={skillIconSize} />
+        <NeovimIcon size={skillIconSize} />
+        <JiraIcon size={skillIconSize} />
+        <GitIcon size={skillIconSize} />
+        <HtmlIcon size={skillIconSize} />
+        <CssIcon size={skillIconSize} />
+        <TailwindCssIcon size={skillIconSize} />
+        <JavaScriptIcon size={skillIconSize} />
+        <ReactIcon size={skillIconSize} />
+        <TypeScriptIcon size={skillIconSize} />
+
       </Container>
     </Container>
   );
