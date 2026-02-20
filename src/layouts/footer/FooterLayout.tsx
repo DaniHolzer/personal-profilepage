@@ -22,7 +22,7 @@ export function FooterLayout({className, debug}: FooterLayoutProps) {
       <Link
         id="footer__link"
         to="sitenotice"
-        className="text-textTertiary"
+        className="text-textTertiary hover:text-textPrimary"
         children="Site Notice"
         aria-label="Link to site notice page"
         title="Site Notice"

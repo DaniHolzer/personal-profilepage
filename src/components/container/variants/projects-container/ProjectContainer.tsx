@@ -26,10 +26,8 @@ export function ProjectsContainer({ className, debug }: ProjectsCotainerProps){
       <Container
         id="projectsContainer__cardsContainer"
         as="section"
-        className="p-[1rem] bg-rose-300 h-auto gap-[1rem]"
+        className="p-[1rem] h-auto gap-[1rem]"
       >
-        <PortfolioCard />
-        <PortfolioCard />
         <PortfolioCard />
       </Container>
     </Container>

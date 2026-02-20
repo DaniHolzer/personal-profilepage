@@ -6,7 +6,7 @@ import { ProjectsContainer } from "components/container/variants/projects-contai
 export default function Projects() {
   return (
     <>
-      <ProjectsContainer debug/>
+      <ProjectsContainer/>
     </>
   );
 }

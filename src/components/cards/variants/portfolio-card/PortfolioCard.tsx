@@ -1,5 +1,6 @@
 import { Heading } from "components/typography/headings/Heading";
-import { Card } from "~/components/cards/base/Card";
+import { Card } from "components/cards/base/Card";
+import { Tag } from "components/tag/base/Tag";
 import {
   portfolioCardStyles,
   cardHeadingStyling,
@@ -16,7 +17,6 @@ export function PortfolioCard({className}: {className?: string}) {
     <Card
       id="portfolioCard"
       className={portfolioCardStyles({className})}
-      debug
     >
       <Heading.H5
         id="projectsContainer__cardsContainer__card-profilePage__heading"
@@ -33,24 +33,26 @@ export function PortfolioCard({className}: {className?: string}) {
         id="projectsCotnainer__cardsContainer-card-profilePage__tagContainer"
         className={cardTagContainerStyling}
       >
-        <p
+        <Tag
           id="projectsContainer__cardsContainer__card-profilePage__tag-js"
-          className="py-[0.5rem] px-[1rem] text-[0.8rem] bg-[#3178C6] rounded-full"
+          className="bg-typeScript"
         >
-          TypeScript
-        </p>
-        <p
-          id="projectsContainer__cardsContainer__card-profilePage__tag-css3"
-          className="py-[0.5rem] px-[1rem] text-[0.8rem] bg-[#38BDF8] rounded-full"
+          Type Script
+        </Tag>
+        <Tag
+          id="projectsContainer__cardsContainer__card-profilePage__tag-tailwindCss"
+          className="bg-tailwindCss"
         >
-          TailwindCSS
-        </p>
-        <p
+          TailwindCss
+        </Tag>
+        <Tag
           id="projectsContainer__cardsContainer__card-profilePage__tag-css3"
-          className="py-[0.5rem] px-[1rem] text-[0.8rem] bg-[#0081A3] rounded-full"
+          className="bg-react"
         >
           React
-        </p>
+        </Tag>
+
+
       </div>
     </Card>
   );
