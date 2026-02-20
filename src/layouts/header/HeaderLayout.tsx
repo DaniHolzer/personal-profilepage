@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { headerLayoutStyles } from "./HeaderLayout.styles";
 import type { HeaderLayoutProps } from "./HeaderLayout.types";
 import { Link } from "components/links/base/Link";
-import { HotdogButton } from "components/button/variants/hotdogButtonNew/HotdogButton";
+import { HotdogButton } from "~/components/button/variants/hotdogButton/HotdogButton";
 import { MainNavigation } from "components/navigations/variants/main-navigation/MainNavigation";
 
 //-------------------------------------------------------------------------------------------------
@@ -30,7 +30,7 @@ export function HeaderLayout({ className, debug }: HeaderLayoutProps) {
         <Link
           id="header__logo"
           to="/"
-          className="text-[2.4rem] underline underline-offset-4 decoration-red-500"
+          className="text-[2.4rem] underline underline-offset-6 decoration-red-400 text-textPrimary tracking-wide"
           children="Daniel Holzer"
           aria-label="Logo"
           title="Home"

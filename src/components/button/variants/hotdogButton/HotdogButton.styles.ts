@@ -5,8 +5,8 @@ import { tv } from 'tailwind-variants';
 
 export const hotdogButtonStyles = tv({
   slots: {
-    base: 'relative',
-    line: 'absolute left-0 w-full bg-gray-900 transition-transform duration-500',
+    base: 'relative cursor-pointer',
+    line: 'absolute left-0 w-full bg-textPrimary transition-transform duration-500',
     lineTop: '',
     lineBottom: '',
     animationTop: '',
