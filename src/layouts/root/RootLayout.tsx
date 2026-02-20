@@ -10,7 +10,7 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
     <>
       <HeaderLayout/>
       <main className="pt-[5.6rem]">{ children }</main>
-      <FooterLayout debug />
+      <FooterLayout/>
     </>
   );
 }

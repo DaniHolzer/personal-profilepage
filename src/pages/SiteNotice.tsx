@@ -6,7 +6,7 @@ import { SiteNoticeContainer } from "~/components/container/variants/siteNotice-
 export default function SiteNotice() {
   return (
     <>
-      <SiteNoticeContainer debug />
+      <SiteNoticeContainer/>
     </>
   );
 }

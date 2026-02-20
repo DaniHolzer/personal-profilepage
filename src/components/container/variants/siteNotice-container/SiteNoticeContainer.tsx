@@ -16,13 +16,11 @@ export function SiteNoticeContainer({className, debug}: SiteNoticeContainerProps
       as="section"
       id="siteNoticeContainer"
       className={siteNoticeContainerStyles({className, debug})}
-      debug
     >
       <Heading.H1
         id="siteNoticeContainer__h1"
         text="site Notice"
         className="uppercase"
-        debug
       />
       <section
         id="siteNotice__ownerInfo"
@@ -44,7 +42,7 @@ export function SiteNoticeContainer({className, debug}: SiteNoticeContainerProps
         >
           <strong>Contact Information:</strong><br />
           Phone: +39 3441186574<br />
-          Email: <a href="holzerdaniel01@gmail.com"></a>
+          Email: holzerdaniel01@gmail.com
         </p>
       </section>
       <section
@@ -113,8 +111,8 @@ export function SiteNoticeContainer({className, debug}: SiteNoticeContainerProps
           Italian law applies. Competent courts: [Bolzano/Bozen] for disputes.
         </p>
       </section>
-      <p className="text-sm text-gray-500 border-t pt-4">
-        Last updated: February 16, 2026
+      <p className="text-sm text-textTertiary border-t pt-4">
+        Last updated: February 20, 2026
       </p>
     </Container>
   );
