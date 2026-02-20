@@ -16,13 +16,11 @@ export function DocumentContainer({className, debug}: DocumentProps ) {
       as="section"
       id="documentContainer"
       className={documentStyles({className, debug})}
-      debug
     >
       <Heading.H1
         id="documentContainer__h1"
         text="Documents"
         className="uppercase mb-[2rem]"
-        debug
       />
       <p
         id="documentContainer__intro"
@@ -34,7 +32,6 @@ export function DocumentContainer({className, debug}: DocumentProps ) {
         as="section"
         id="documentContainer__cardsContainer"
         className="items-center gap-[1.5rem]"
-        debug
       >
         <CvCard />
         <CompTIAACard />

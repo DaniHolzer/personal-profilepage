@@ -1,6 +1,11 @@
 import { Card } from "components/cards/base/Card";
 import { Heading } from "components/typography/headings/Heading";
-import { documentCardStyles } from "./DocumentCard.styles";
+import {
+  documentCardStyles,
+  downloadButtonClass,
+  downloadIconSize,
+  downloadIconClass
+} from "./DocumentCard.styles";
 import { LinkButton } from "components/button/variants/link-button/LinkButton";
 import { FileDownloadIcon } from "components/icons/Icons";
 
@@ -12,7 +17,6 @@ export function CvCard({className}: {className?: string}){
     <Card
       id="cvCard"
       className={documentCardStyles({className})}
-      debug
     >
       <Heading.H2
         id="cvCard__heading"
@@ -31,10 +35,9 @@ export function CvCard({className}: {className?: string}){
         id="cvCard__linkButton"
         fullWidth
         variant="primary"
-        size="icon"
-        className="p-[0.5rem] h-auto"
+        className={downloadButtonClass}
       >
-        <FileDownloadIcon size={20} />
+        <FileDownloadIcon size={downloadIconSize} className={downloadIconClass}/>
       </LinkButton>
     </Card>
   );

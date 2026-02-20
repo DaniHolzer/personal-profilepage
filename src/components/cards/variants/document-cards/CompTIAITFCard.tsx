@@ -1,6 +1,11 @@
 import { Card } from "components/cards/base/Card";
 import { Heading } from "components/typography/headings/Heading";
-import { documentCardStyles } from "./DocumentCard.styles";
+import {
+  documentCardStyles,
+  downloadButtonClass,
+  downloadIconSize,
+  downloadIconClass
+} from "./DocumentCard.styles";
 import { LinkButton } from "components/button/variants/link-button/LinkButton";
 import { FileDownloadIcon } from "components/icons/Icons";
 
@@ -12,7 +17,6 @@ export function CompTIAITFCard({className}: {className?: string}){
     <Card
       id="CompTIA-ITF+Card"
       className={documentCardStyles({className})}
-      debug
     >
       <Heading.H2
         id="CompTIA-ITF+Card__heading"
@@ -31,10 +35,9 @@ export function CompTIAITFCard({className}: {className?: string}){
         id="CompTIA-ITF+Card__linkButton"
         fullWidth
         variant="primary"
-        size="icon"
-        className="p-[0.5rem] h-auto"
+        className={downloadButtonClass}
       >
-        <FileDownloadIcon size={20} />
+        <FileDownloadIcon size={downloadIconSize} className={downloadIconClass}/>
       </LinkButton>
     </Card>
   );
