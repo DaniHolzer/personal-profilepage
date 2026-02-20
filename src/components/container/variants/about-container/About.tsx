@@ -14,13 +14,11 @@ export function AboutContainer({ className, debug}: AboutProps) {
       as="section"
       id="aboutContainer"
       className={aboutStyles({className, debug})}
-      debug
     >
       <Heading.H1
         id="aboutContainer__h1"
         text="About me"
         className="uppercase text-center mb-[2rem]"
-        debug
       />
       <Container
         as="article"

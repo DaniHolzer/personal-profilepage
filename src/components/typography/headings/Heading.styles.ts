@@ -4,7 +4,7 @@ import { tv } from "tailwind-variants";
 // Heading Styles
 
 export const headingStyles = tv({
-  base: "font-bold",
+  base: "font-bold text-textPrimary",
   variants: {
     level: {
       1: "text-4xl",

@@ -9,7 +9,7 @@ export default function Home() {
     <>
 {/*       <MainNavigation debug /> */}
       <HeroContainer/>
-      <AboutContainer debug />
+      <AboutContainer/>
     </>
   );
 }
