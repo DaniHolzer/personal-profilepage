@@ -1,7 +1,6 @@
 import { contactCardStyles } from "./ContactCard.styles";
 import { Card } from "components/cards/base/Card";
 import { Heading } from "components/typography/headings/Heading";
-import { Container } from "components/container/base/Container";
 import { Link } from "components/links/base/Link";
 import {
   LinkedInIcon,
@@ -31,22 +30,22 @@ export function ContactCard({className}: {className?: string}){
       <ul id="contactContainer__contact-socials" className="flex justify-center items-center flex-wrap gap-[2rem]">
         <li>
           <Link
-            id="contactContainer__contact-socials__link-github"
-            to="https://github.com/DaniHolzer"
+            id="contactContainer__contact-socials__link-linkedIn"
+            to="https://linkedin.com/in/daniel-holzer-9963262a1"
             children=<LinkedInIcon size={18}/>
             className=""
-            title="GitHub"
-            aria-label="Link to GitHub account"
+            title="LinkedIn"
+            aria-label="Link to LinkedIn account"
           />
         </li>
         <li>
           <Link
-            id="contactContainer__contact-socials__link-gitlab"
-            to="https://gitlab.com/DaniHolzer"
+            id="contactContainer__contact-socials__link-x"
+            to="https://x.com/DanielHolz19614"
             children=<XIcon size={18}/>
             className=""
-            title="GitLab"
-            aria-label="Link to GitLab account"
+            title="X"
+            aria-label="Link to X account"
           />
         </li>
       </ul>
