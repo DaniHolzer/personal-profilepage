@@ -18,7 +18,8 @@ export function HeroContainer({className, debug}: HeroProps) {
       className={heroStyles({className, debug})}
     >
       <p className="text-[1.8rem] text-center mb-[1rem] text-textPrimary" id="heroContainer__intro">
-        Software Engineer from <br/> South Tyrol.      </p>
+        Software Engineer from <br/> South Tyrol.
+      </p>
       <Link
         id="heroContainer__link"
         to="#aboutContainer"
@@ -30,7 +31,6 @@ export function HeroContainer({className, debug}: HeroProps) {
       </Link>
       <img src={ skiingImage } className="w-[20rem] h-[20rem] my-[6.5rem] rounded-2xl"/>
       <SocialsContainer/>
-
     </Container>
   )
 }
