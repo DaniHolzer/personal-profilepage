@@ -42,7 +42,7 @@ export function SkillsContainer({className, debug}: SkillsContainerProps ) {
       <Container
         as="div"
         id="skillsContainer__container"
-        className="flex-row flex-wrap gap-[2rem] justify-center"
+        className="flex-row flex-wrap gap-[2rem] justify-center max-w-[30rem]"
       >
         <UbuntuIcon size={skillIconSize} className={skillIconClass}/>
         <NeovimIcon size={skillIconSize} className={skillIconClass}/>

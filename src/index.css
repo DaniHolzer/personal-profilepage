@@ -6,6 +6,7 @@
   font-size: 62.5%;
 }
 
+
 @theme {
   --color-bgPrimary: #242424;
   --color-bgSecondary: #44403B;
@@ -17,6 +18,9 @@
   --color-react: #0081A3;
 }
 
+body {
+  background-color: var(--color-bgPrimary);
+}
 
 
 
