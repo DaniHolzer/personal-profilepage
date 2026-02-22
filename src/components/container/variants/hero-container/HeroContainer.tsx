@@ -2,7 +2,7 @@ import { Container } from "components/container/base/Container";
 import { heroStyles } from "./HeroContainer.styles";
 import type { HeroProps } from "./HeroContainer.types";
 import { Link } from "components/links/base/Link";
-import skiingImage from "src/assets/skiing.jpg";
+import portrait from "src/assets/portrait.jpg";
 import { SocialsContainer } from "components/container/variants/socials-container/SocialsContainer";
 
 
@@ -29,7 +29,7 @@ export function HeroContainer({className, debug}: HeroProps) {
       >
         More about me
       </Link>
-      <img src={ skiingImage } className="w-[20rem] h-[20rem] my-[6.5rem] rounded-2xl"/>
+      <img src={ portrait } className="w-[20rem] h-[20rem] my-[6.5rem] rounded-2xl"/>
       <SocialsContainer/>
     </Container>
   )
