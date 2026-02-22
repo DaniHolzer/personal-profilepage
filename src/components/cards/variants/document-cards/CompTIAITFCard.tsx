@@ -20,7 +20,7 @@ export function CompTIAITFCard({className}: {className?: string}){
       id="CompTIA-ITF+Card"
       className={documentCardStyles({className})}
     >
-      <Heading.H3
+      <Heading.H2
         id="CompTIA-ITF+Card__heading"
         text="CompTIA ITF+"
         className={headingClass}

@@ -18,9 +18,9 @@ export function ProjectsContainer({ className, debug }: ProjectsCotainerProps){
       <Heading.H1
         id="projectsContainer__h1"
         text="Projects"
-        className="mb-[2rem]"
+        className="mb-[3rem]"
       />
-      <p id="projectsContainer__intro" className="text-[1rem] text-center mb-[2rem]">
+      <p id="projectsContainer__intro" className="text-center mb-[3rem]">
         Here are some of my recent works showcasing my development skills.
       </p>
       <Container

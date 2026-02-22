@@ -18,7 +18,7 @@ export function AboutContainer({ className, debug}: AboutProps) {
       <Heading.H1
         id="aboutContainer__h1"
         text="About me"
-        className="uppercase text-center mb-[2rem]"
+        className="uppercase text-center mb-[3rem]"
       />
       <Container
         as="article"
@@ -29,17 +29,17 @@ export function AboutContainer({ className, debug}: AboutProps) {
           id="aboutContainer__article__profilefoto"
           src={ profilefoto }
           alt="Profile foto of me"
-          className="w-[10rem] h-[10rem] rounded-full mb-[2rem] self-center"
+          className="w-[10rem] h-[10rem] rounded-full mb-[3rem] self-center"
         />
         <Heading.H2
           id="aboutContainer__article__subheading"
           text="Hi, I'm Daniel"
           className="mb-[0.5rem]"
         />
-        <p id="aboutContainer__article__intro" className="font-bold text-xl mb-[2rem]">
+        <p id="aboutContainer__article__intro" className="font-bold mb-[2rem]">
           a self-taught software engineering student from South Tyrol.
         </p>
-        <p id="aboutContainer__article__study" className="mb-[1rem]">
+        <p id="aboutContainer__article__study" className="mb-[1.5rem]">
           I started learning software development from home two years ago,
           following a structured but independent path. My main learning resources
           have been Udemy courses and CompTIA certifications,

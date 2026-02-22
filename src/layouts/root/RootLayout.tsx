@@ -9,7 +9,7 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
   return(
     <>
       <HeaderLayout/>
-      <main className="pt-[5.6rem] max-w-[40rem] my-0 mx-auto">{ children }</main>
+      <main className="pt-[5.6rem] max-w-[50rem] my-0 mx-auto">{ children }</main>
       <FooterLayout/>
     </>
   );

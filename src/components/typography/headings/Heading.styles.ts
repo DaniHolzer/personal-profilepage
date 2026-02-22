@@ -7,10 +7,10 @@ export const headingStyles = tv({
   base: "font-bold text-textPrimary",
   variants: {
     level: {
-      1: "text-4xl",
-      2: "text-3xl",
-      3: "text-2xl",
-      4: "text-xl",
+      1: "text-5xl",
+      2: "text-4xl",
+      3: "text-3xl",
+      4: "text-2xl",
       5: "text-lg",
       6: "tet-base",
     },

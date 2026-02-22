@@ -20,11 +20,11 @@ export function DocumentContainer({className, debug}: DocumentProps ) {
       <Heading.H1
         id="documentContainer__h1"
         text="Documents"
-        className="uppercase mb-[2rem]"
+        className="uppercase mb-[3rem]"
       />
       <p
         id="documentContainer__intro"
-        className="text-[1rem] text-center mb-[2rem]"
+        className="text-center mb-[3rem]"
       >
         Here are my Documents. You can download them below.
       </p>

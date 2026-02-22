@@ -25,11 +25,11 @@ export function ContactContainer({ className, debug}: ContactProps) {
         id="contactContainer__profilefoto"
         src={ profilefoto }
         alt="Profile foto of me"
-        className="w-[10rem] h-[10rem] rounded-4xl self-center"
+        className="w-[12rem] h-[12rem] rounded-4xl self-center"
       />
       <p
         id="contactContainer__intro"
-        className="text-[1rem] text-center"
+        className="text-center"
       >
         Let's work together
       </p>

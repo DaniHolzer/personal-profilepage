@@ -41,7 +41,7 @@ export function SiteNoticeContainer({className, debug}: SiteNoticeContainerProps
           id="siteNotice__contact"
         >
           <strong>Contact Information:</strong><br />
-          Phone: +39 3441186574<br />
+{/*           Phone: +39 3441186574<br /> */}
           Email: holzerdaniel01@gmail.com
         </p>
       </section>
@@ -111,8 +111,8 @@ export function SiteNoticeContainer({className, debug}: SiteNoticeContainerProps
           Italian law applies. Competent courts: [Bolzano/Bozen] for disputes.
         </p>
       </section>
-      <p className="text-sm text-textTertiary border-t pt-4">
-        Last updated: February 20, 2026
+      <p className="text-md text-textTertiary border-t pt-4">
+        Last updated: February 22, 2026
       </p>
     </Container>
   );

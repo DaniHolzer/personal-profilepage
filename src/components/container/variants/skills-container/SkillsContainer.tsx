@@ -31,13 +31,13 @@ export function SkillsContainer({className, debug}: SkillsContainerProps ) {
       <Heading.H1
         id="skillsContainer__h1"
         text="Skills"
-        className="uppercase mb-[2rem]"
+        className="uppercase mb-[3rem]"
       />
       <p
         id="skillsContainer__intro"
-        className="text-[1rem] text-center mb-[2rem]"
+        className="text-center mb-[3rem]"
       >
-        Here are my skills i gained in my 2 years of studying.
+        Here are my skills i gained in my two years of studying.
       </p>
       <Container
         as="div"

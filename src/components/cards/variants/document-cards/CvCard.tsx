@@ -20,7 +20,7 @@ export function CvCard({className}: {className?: string}){
       id="cvCard"
       className={documentCardStyles({className})}
     >
-      <Heading.H3
+      <Heading.H2
         id="cvCard__heading"
         text="CV"
         className={headingClass}
