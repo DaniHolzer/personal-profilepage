@@ -41,7 +41,7 @@ export function SiteNoticeContainer({className, debug}: SiteNoticeContainerProps
           id="siteNotice__contact"
         >
           <strong>Contact Information:</strong><br />
-{/*           Phone: +39 3441186574<br /> */}
+          Phone: +39 3485885811<br />
           Email: holzerdaniel01@gmail.com
         </p>
       </section>
